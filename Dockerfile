@@ -1,3 +1,2 @@
-FROM java:8
-COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","demo-0.0.1-SNAPSHOT.jar"]
+# Start with a base image containing Java runtime
+FROM openjdk:8-jdk-alpine
